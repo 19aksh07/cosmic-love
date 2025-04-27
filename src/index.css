@@ -1,0 +1,57 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-space-deep text-white overflow-hidden;
+  }
+}
+
+@keyframes comet-left-to-right {
+  from {
+    transform: translateX(calc(-100vw - 150px)) rotate(15deg);
+    opacity: 0;
+  }
+  5% {
+    opacity: 1;
+  }
+  95% {
+    opacity: 1;
+  }
+  to {
+    transform: translateX(0) rotate(15deg);
+    opacity: 0;
+  }
+}
+
+@keyframes twinkle {
+  0% {
+    opacity: 0.8;
+    transform: scale(0.95);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+  100% {
+    opacity: 0.8;
+    transform: scale(0.95);
+  }
+}
+
+@keyframes ray-pulse {
+  0% {
+    opacity: 0.3;
+    width: 40px;
+  }
+  50% {
+    opacity: 0.8;
+    width: 60px;
+  }
+  100% {
+    opacity: 0.3;
+    width: 40px;
+  }
+}
